@@ -4,21 +4,44 @@ import Sidebar from './Sidebar';
 import myData from './data.json'
 
 export default class Product extends Component {
+    constructor (props) {
+        super(props)
+        this.state = {
+            users : null
+        }
+    }
     format_currency = (number) => {
         return number.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,");
     }
+    componentDidMount () {
+        fetch('https://api.github.com/users')
+            .then(response => response.json())
+            .then(json => {
+                this.setState({
+                    users : json
+                })
+            })
+        
+    }
+
   render() {
+     const {users} = this.state
     return (
         <div className="row">
             <Sidebar>Shop Menu</Sidebar>
             {/* /.col-lg-3 */}
             <div className="col-lg-9 my-4">
                 <div className="row">
-                    {
-                        myData.map((val, key) => {
-                            return <Item key={key} pid={val.id} price={this.format_currency(val.price)} image = {val.image} summary = {val.summary} > {val.name} </Item>
-                        })
-                    }
+                   { users ? (
+                    users.map(user => (
+                           <Item pid= {user.id} key={user.id} price={user.node_id} summary={user.body} image = {user.avatar_url}>
+                            {user.login || '[No account]'}
+                           </Item>
+                       ))
+                   ) : (
+                           <div>Loading </div>
+                       )
+                   }
                 </div>
                 {/* /.row */}
             </div>
