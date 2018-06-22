@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Course from '../Home/Course';
+import Item from './Item';
 
 export default class Home extends Component {
   render() {
@@ -33,14 +33,14 @@ export default class Home extends Component {
                 </a>
             </div>
             <div className="row">
-                <Course>iPhone X</Course>
-                <Course>Samsung Galaxy A6</Course>
-                <Course>Macbook Pro 2018</Course>
-                <Course>Oppo Find X</Course>
-                <Course>iPhone 8 plus Red</Course>
-                <Course>Samsung S8 plus</Course>
-                <Course>Xiaomi Find X</Course>
-                <Course>iPhone 5s</Course>
+                <Item>iPhone X</Item>
+                <Item col="3">Samsung Galaxy A6</Item>
+                <Item col="3">Macbook Pro 2018</Item>
+                <Item col="3">Oppo Find X</Item>
+                <Item col="3">iPhone 8 plus Red</Item>
+                <Item col="3">Samsung S8 plus</Item>
+                <Item col="3">Xiaomi Find X</Item>
+                <Item col="3">iPhone 5s</Item>
             </div>
             {/* /.row */}
             </div>

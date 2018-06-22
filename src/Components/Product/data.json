@@ -1,0 +1,45 @@
+[
+    {
+        "id" : 1,
+        "name" : "Hà Giang",
+        "price" : 2000000,
+        "image" : "https://znews-photo-td.zadn.vn/w660/Uploaded/jaroin/2016_08_22/IMG_4221.JPG",
+        "summary" : "Hà Giang là một tỉnh thuộc vùng núi phía Bắc Việt Nam. Tỉnh Hà Giang phía đông giáp tỉnh Cao Bằng, phía tây giáp tỉnh Yên Bái và Lào Cai, phía nam giáp tỉnh Tuyên Quang"
+    },
+    {
+        "id" : 2,
+        "name" : "Sơn La",
+        "price" : 2200000,
+        "image" : "https://thammyxuanhuong.com/wp-content/uploads/2015/08/phun-xam-moi-tai-son-la-1.jpg",
+        "summary" : "Sơn La là tỉnh miền núi Tây Bắc Việt Nam, tỉnh có diện tích 14.125 km² chiếm 4,27% tổng diện tích Việt Nam, đứng thứ 3 trong số 63 tỉnh thành phố. Toạ độ địa lý: 20039’ - 22002’ vĩ độ Bắc và 103011’ - 105002’ kinh độ Đông"
+    },
+    {
+        "id" : 3,
+        "name" : "Hòa Bình",
+        "price" : 2000200,
+        "image" : "http://taybacsensetravel.com/view/at_tinh-hoa-binh_e5da5ea93e45824e77173475c8edac3e.jpg",
+        "summary" : "Hòa Bình là một tỉnh miền núi thuộc vùng tây bắc Việt Nam, có vị trí ở phía nam Bắc Bộ, giới hạn ở tọa độ 20°19' - 21°08' vĩ độ Bắc, 104°48' - 105°40' kinh độ Đông, tỉnh lỵ là thành phố Hòa Bình nằm cách trung tâm thủ đô Hà Nội 73 km"
+    },
+    {
+        "id" : 4,
+        "name" : "Cà Mau",
+        "price" : 3000000,
+        "image" : "http://www.dulichviethuong.com/upload/sanpham/du-lich-dat-mui-ca-mau.jpg",
+        "summary" : "Cà Mau là tỉnh ven biển ở cực nam của Việt Nam, nằm trong khu vực Đồng bằng sông Cửu Long. Cà Mau là một vùng đất trẻ, mới được khai phá khoảng trên 300 năm. Vùng đất Cà Mau ngày xưa được Mạc Cửu dẫn người Hoa đến khai phá"
+    },
+    {
+        "id" : 5,
+        "name" : "Sài Gòn",
+        "price" : 4300000,
+        "image" : "http://sohanews.sohacdn.com/thumb_w/660/2017/photo1502285118540-1502285118842-0-0-314-507-crop-1502285128619.jpg",
+        "summary" : "Thành phố Hồ Chí Minh được dự báo đứng thứ 2 trong số 30 thành phố châu Á có tốc độ tăng trưởng GDP mạnh nhất trong giai đoạn 2017-2021"
+    },
+    {
+        "id" : 6,
+        "name" : "Bình Thuận",
+        "price" : 2002000,
+        "image" : "http://cafefcdn.com/thumb_w/650/2015/55517-1441361189499.jpg",
+        "summary" : "Bình Thuận là tỉnh duyên hải cực Nam Trung Bộ Việt Nam, nằm trong khu vực chịu ảnh hưởng của địa bàn kinh tế trọng điểm phía Nam"
+    }
+    
+]

@@ -1,14 +1,16 @@
 import React, { Component } from 'react'
-
-export default class Course extends Component {
+import {Link} from 'react-router-dom'
+export default class Item extends Component {
   render() {
     return (
-        <div className="col-lg-3 col-md-6 mb-3">
+        <div className="col-lg-3 col-md-6 my-4">
             <div className="card h-100">
-                <a href="#"><img className="card-img-top" src="http://placehold.it/700x400" alt /></a>
+                <Link to="/">
+                    <img className="card-img-top" src="http://placehold.it/700x400/000" alt={this.props.children} />
+                </Link>
                 <div className="card-body">
                 <h4 className="card-title">
-                    <a href="#">{this.props.children}</a>
+                    <Link to="/">{this.props.children}</Link>
                 </h4>
                 <h5>$24.99</h5>
                 <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur!</p>
