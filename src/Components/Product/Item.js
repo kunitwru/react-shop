@@ -24,21 +24,21 @@ export default class Item extends Component {
   
         return str;
     }
-
+    
   render() {
     return (
         <div className="col-lg-4 col-md-6 my-4">
             <div className="card h-100">
-                <Link to={"/chi-tiet/"+ this.props.pid +"/" + this.convert_name_to_slug(this.props.children) + ".html"} alt={this.props.children}>
-                    <img className="card-img-top" src={ this.props.image } alt={this.props.children}  />
+                <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"} alt={this.props.children}>
+                    <img className="card-img-top" src={ this.props.data.avatar_url } alt={this.props.children}  />
                 </Link>
                 <div className="card-body">
                     <h4 className="card-title">
-                        <Link to={"/chi-tiet/"+ this.props.pid +"/" + this.convert_name_to_slug(this.props.children) + ".html"}>{ this.props.children }</Link>
+                        <Link to={"/chi-tiet/"+ this.props.data.login +"/" + this.convert_name_to_slug(this.props.children) + ".html"}>{ this.props.children }</Link>
                     </h4>
-                    <h5>{ this.props.price }</h5>
+                    <h5>{ this.props.data.node_id }</h5>
                     <p className="card-text">
-                        { this.props.summary }
+                        { this.props.data.body }
                     </p>
                 </div>
                 <div className="card-footer">

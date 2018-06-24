@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Item from './Item'
 import Sidebar from './Sidebar';
-import myData from './data.json'
 
 export default class Product extends Component {
     constructor (props) {
@@ -20,6 +19,8 @@ export default class Product extends Component {
                 this.setState({
                     users : json
                 })
+            }).catch((e) => {
+                console.log(e);
             })
         
     }
@@ -34,7 +35,7 @@ export default class Product extends Component {
                 <div className="row">
                    { users ? (
                     users.map(user => (
-                           <Item pid= {user.id} key={user.id} price={user.node_id} summary={user.body} image = {user.avatar_url}>
+                           <Item data= {user} key={user.id} >
                             {user.login || '[No account]'}
                            </Item>
                        ))
