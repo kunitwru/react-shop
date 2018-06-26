@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import UserInfo from './UserInfo';
 
 export default class Detail extends Component {
   constructor (props) {
@@ -25,8 +26,9 @@ export default class Detail extends Component {
     return (
       <div>
         { user ? (
-            <UserInfo />
-            
+            <div>
+                <UserInfo data={user}></UserInfo>
+            </div>
             ) : (
                     <div>Loading ...</div>
                 )
