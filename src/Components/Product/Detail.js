@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+
 import UserInfo from './UserInfo';
 
 export default class Detail extends Component {
@@ -13,7 +14,7 @@ export default class Detail extends Component {
     fetch('https://api.github.com/users/' + login)
         .then(response => response.json())
         .then(json => {
-          console.log(json);
+        //   console.log(json);
             this.setState({
                 user : json
             })

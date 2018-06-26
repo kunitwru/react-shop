@@ -26,6 +26,7 @@ export default class Item extends Component {
     }
     
   render() {
+      
     return (
         <div className="col-lg-4 col-md-6 my-4">
             <div className="card h-100">
